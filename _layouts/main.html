@@ -3,7 +3,8 @@
   <div class="jumbotron">
     <h1 class="display-3">
       {% if site.conference.main.logo.img %}
-        <img src="{{ site.conference.main.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="w-75" alt="{{ site.title }}" />
+        <img src="{{ site.conference.main.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="w-75 d-none d-md-inline" alt="{{ site.title }}" />
+        <img src="{{ site.conference.main.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="w-100 d-md-none" alt="{{ site.title }}" />
       {% else %}
         {{ site.title }}
       {% endif %}

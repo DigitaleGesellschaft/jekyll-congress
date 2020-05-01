@@ -65,12 +65,12 @@
               {% assign talk = site.talks | where: 'name', t.name | first %}
               {% include partials/get_main_category.html %}
 
-              <li class="clearfix">
-                <div class="float-left">
+              <li class="d-flex flex-row">
+                <div class="flex-column">
                   {% include partials/get_talk_time.html %}
                   {% include partials/show_talk_time.html %}
                 </div>
-                <div class="float-left ml-2 pl-1 mb-1 border-soft-{{ main_cat_color }}">
+                <div class="flex-column ml-2 pl-1 mb-1 border-soft-{{ main_cat_color }}">
                   <p class="mb-0">
                     {% include partials/show_talk.html %}
                   </p>
